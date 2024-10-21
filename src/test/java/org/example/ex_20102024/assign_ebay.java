@@ -1,19 +1,19 @@
 package org.example.ex_20102024;
 
-
-import io.qameta.allure.Description;
 import org.openqa.selenium.By;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
-public class selenium22 {
 
-    @Description("Verify Ebay Print the prices (iMac)")
+public class assign_ebay {
+
     @Test
     public void testebay(){
 
@@ -47,6 +47,7 @@ public class selenium22 {
             System.out.println("Title: " + searchtitle.get(i).getText() + " || " + "Price: " + searchprice.get(i).getText());
             System.out.println();
         }
+
         chromeDriver.quit();
     }
 }
